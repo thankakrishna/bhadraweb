@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Timings — Arulmigu Bhadreshwari Amman Kovil</title>
+    <link rel="icon" href="images/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="preloader" id="preloader">
+        <div class="om-symbol">🕉️</div>
+        <p>Daily Pooja</p>
+        <div class="loading-bar"></div>
+    </div>
+    <div class="particles" id="particles"></div>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span><i class="fas fa-phone"></i> +91 XXXXX XXXXX</span>
+            <span><i class="fas fa-envelope"></i> info@bhadreshwariamman.org</span>
+            <span><i class="fas fa-map-marker-alt"></i> Kanjampuram, Kanyakumari</span>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><span class="fallback-icon">🙏</span></div>
+                <div class="logo-text"><h1>Bhadreshwari Amman</h1><p>Samrakshana Seva Trust</p></div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-om"></i> Home</a></li>
+                <li><a href="history.html"><i class="fas fa-scroll"></i> History</a></li>
+                <li><a href="pooja.html" class="active"><i class="fas fa-fire"></i> Pooja</a></li>
+                <li><a href="functions.html"><i class="fas fa-calendar-alt"></i> Functions</a></li>
+                <li><a href="committee.html"><i class="fas fa-users"></i> Committee</a></li>
+                <li><a href="institutes.html"><i class="fas fa-university"></i> Institutes</a></li>
+                <li><a href="donate.html"><i class="fas fa-hand-holding-heart"></i> Donate</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="page-banner">
+        <img src="images/amman/amman-pooja.jpg" alt="Pooja"
+             onerror="this.src='https://novellum-filestore-mcp.s3.us-east-2.amazonaws.com/atxp:atxp_acct_71sDzs43OI4QZANCmiTxU/bbaf187c-f3a7-45fc-bf1a-6285a3f0edae.png'">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h2>🪔 Daily Pooja</h2>
+            <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Pooja</p>
+        </div>
+    </div>
+
+    <!-- DAILY POOJA -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🪔</span>
+                <h2>Daily Pooja Schedule</h2>
+                <p class="subtitle">தினசரி பூஜை நேரம் — Sacred Rituals</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🌅</div>
+                    <h4>Usha Kala Pooja</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> 5:30 AM — 6:30 AM</div>
+                    <p>Dawn worship with Suprabatham recital, Abhishekam with holy water, milk, turmeric, kumkum, and sandal paste. The Goddess is awakened with sacred chants.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">☀️</div>
+                    <h4>Kalai Pooja</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> 8:00 AM — 9:00 AM</div>
+                    <p>Morning Pooja with elaborate Alankaram, offering of fresh flowers, fruits, and special Naivedyam. Goddess adorned in silk and divine jewelry.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🔆</div>
+                    <h4>Uchikala Pooja</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> 12:00 PM — 12:30 PM</div>
+                    <p>Noon worship with Annadhanam offering. Grand Deepa Aradhana with 108 oil lamps illuminating the sanctum sanctorum.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🌆</div>
+                    <h4>Sayaratchai Pooja</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> 5:30 PM — 6:30 PM</div>
+                    <p>Evening worship with Deeparadhana, devotional music, camphor lighting, and Thiru Neeru distribution to devotees.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🌙</div>
+                    <h4>Arthajama Pooja</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> 8:00 PM — 8:30 PM</div>
+                    <p>Final pooja — Goddess offered Paal naivedyam and lullaby hymns. The divine energy envelops the temple as doors close.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🔥</div>
+                    <h4>Special Archanas</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> Available All Day</div>
+                    <p>Sahasranama Archana, Kumkum Archana, Thulasi Archana, Pushpa Archana, and Vilakku Pooja. Book for family welfare.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL POOJA -->
+    <section class="section section-alt2">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">✨</span>
+                <h2>Special Poojas & Homams</h2>
+                <p class="subtitle">சிறப்பு பூஜைகள் — By Request</p>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🔱</div>
+                    <h4>Chandi Homam</h4>
+                    <div class="card-time">₹5,001 onwards</div>
+                    <p>Powerful fire ritual invoking Goddess Chandi for protection from enemies and negative energies. Includes Kumkum Archana.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🌺</div>
+                    <h4>Lakshmi Pooja</h4>
+                    <div class="card-time">₹1,116 onwards</div>
+                    <p>Sacred worship for wealth, prosperity, and financial stability. Special Abhishekam and 108 lotus offering to Goddess.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">📿</div>
+                    <h4>Sahasranama Archana</h4>
+                    <div class="card-time">₹501 onwards</div>
+                    <p>Recitation of 1008 divine names of the Goddess with kumkum or flower offerings. For family health and happiness.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">💐</div>
+                    <h4>Pushpanjali</h4>
+                    <div class="card-time">₹251 onwards</div>
+                    <p>Flower offering pooja for auspicious beginnings — new business, marriage, education, or any significant life event.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🕯️</div>
+                    <h4>Navagraha Shanti</h4>
+                    <div class="card-time">₹2,001 onwards</div>
+                    <p>Planetary peace pooja to neutralize negative planetary effects. Includes special Homam and Thila Tharpanam.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🎊</div>
+                    <h4>Annaprasanam</h4>
+                    <div class="card-time">₹1,001 onwards</div>
+                    <p>Sacred first-feeding ceremony for infants performed in the divine presence of Bhadreshwari Amman for blessed life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POOJA PHOTOS UPLOAD -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">📸</span>
+                <h2>Pooja Gallery</h2>
+                <p class="subtitle">Upload Pooja & Archana Photos</p>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid" id="poojaGallery"></div>
+            <div class="upload-manager" id="uploadPooja">
+                <div class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <h4>Upload Pooja Photos</h4>
+                <p>Drag & drop or click to browse — Saves to <code>images/amman/</code></p>
+                <input type="file" multiple accept="image/*">
+            </div>
+            <div class="upload-preview" id="previewPooja"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>🕉️ Bhadreshwari Amman Kovil</h3>
+                <p>Kanjampuram, Kanyakumari District, Tamil Nadu.<br>Samrakshana Seva Trust (179/2004)</p>
+            </div>
+            <div class="footer-col"><h3>Quick Links</h3><ul><li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li><li><a href="history.html"><i class="fas fa-chevron-right"></i> History</a></li><li><a href="donate.html"><i class="fas fa-chevron-right"></i> Donate</a></li></ul></div>
+            <div class="footer-col"><h3>Timings</h3><ul><li><a href="#">🌅 5:30 AM – 12:30 PM</a></li><li><a href="#">🌆 4:30 PM – 8:30 PM</a></li></ul></div>
+            <div class="footer-col"><h3>Contact</h3><ul><li><a href="#"><i class="fas fa-phone"></i> +91 XXXXX XXXXX</a></li><li><a href="#"><i class="fas fa-envelope"></i> Email Us</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><span class="om">🕉️</span><br>© 2025 Arulmigu Bhadreshwari Amman Kovil<br><span class="tagline">Om Shakti Om</span></div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+    <script src="js/main.js"></script>
+    <script>initUploadManager('uploadPooja', 'previewPooja', 'amman');</script>
+</body>
+</html>

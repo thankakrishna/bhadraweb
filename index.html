@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🙏 Arulmigu Bhadreshwari Amman Kovil | Kanjampuram, Kanyakumari</title>
+    <meta name="description" content="Official website of Arulmigu Bhadreshwari Amman Kovil, Kanjampuram, Kanyakumari District. Managed by Samrakshana Seva Trust (179/2004).">
+    <link rel="icon" href="images/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="om-symbol">🕉️</div>
+        <p>Arulmigu Bhadreshwari Amman</p>
+        <div class="loading-bar"></div>
+    </div>
+
+    <!-- PARTICLES -->
+    <div class="particles" id="particles"></div>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span><i class="fas fa-phone"></i> +91 XXXXX XXXXX</span>
+            <span><i class="fas fa-envelope"></i> info@bhadreshwariamman.org</span>
+            <span><i class="fas fa-map-marker-alt"></i> Kanjampuram, Kanyakumari Dist.</span>
+        </div>
+        <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <!-- Replace with: <img src="images/icons/logo.png" alt="Logo"> -->
+                    <span class="fallback-icon">🙏</span>
+                </div>
+                <div class="logo-text">
+                    <h1>Bhadreshwari Amman</h1>
+                    <p>Samrakshana Seva Trust</p>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active"><i class="fas fa-om"></i> Home</a></li>
+                <li><a href="history.html"><i class="fas fa-scroll"></i> History</a></li>
+                <li><a href="pooja.html"><i class="fas fa-fire"></i> Pooja</a></li>
+                <li><a href="functions.html"><i class="fas fa-calendar-alt"></i> Functions</a></li>
+                <li><a href="committee.html"><i class="fas fa-users"></i> Committee</a></li>
+                <li><a href="institutes.html"><i class="fas fa-university"></i> Institutes</a></li>
+                <li><a href="donate.html"><i class="fas fa-hand-holding-heart"></i> Donate</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION WITH ANIMATED RAYS -->
+    <section class="hero" id="home">
+        <div class="divine-rays">
+            <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+            <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+            <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+            <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+            <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+            <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+            <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+            <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+        </div>
+        <div class="glow-circle"></div>
+
+        <div class="hero-amman">
+            <!-- REPLACE with your Amman photo: images/amman/amman-hero.jpg -->
+            <img src="images/amman/amman-hero.jpg" alt="Arulmigu Bhadreshwari Amman"
+                 onerror="this.src='https://novellum-filestore-mcp.s3.us-east-2.amazonaws.com/atxp:atxp_acct_71sDzs43OI4QZANCmiTxU/bbaf187c-f3a7-45fc-bf1a-6285a3f0edae.png'">
+        </div>
+
+        <div class="hero-overlay">
+            <p class="tamil-name">அருள்மிகு பத்ரேஸ்வரி அம்மன் கோவில்</p>
+            <h2 class="temple-name">Arulmigu Bhadreshwari Amman Kovil</h2>
+            <p class="trust-name">Samrakshana Seva Trust — Reg. No. 179/2004</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Kanjampuram, Kanyakumari District, Tamil Nadu</p>
+            <div class="hero-cta">
+                <a href="pooja.html" class="btn-primary"><i class="fas fa-fire"></i> Pooja Timings</a>
+                <a href="donate.html" class="btn-secondary"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+            </div>
+        </div>
+
+        <div class="scroll-arrow">
+            <a href="#audio-section"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- AUDIO PLAYER BAR -->
+    <div class="audio-bar" id="audio-section">
+        <span class="audio-label"><i class="fas fa-compact-disc"></i> Divine Audio</span>
+        <select class="audio-select" id="audioSelect" onchange="changeAudio()">
+            <option value="amman-song">🎵 Amman Devotional Song</option>
+            <option value="lalitha-sahasranamam">🙏 Lalitha Sahasranamam</option>
+            <option value="abirami-anthathi">📿 Abirami Anthathi</option>
+            <option value="durga-manthiram">🕉️ Durga Manthiram</option>
+            <option value="amman-suprabatham">🌅 Amman Suprabatham</option>
+        </select>
+        <button class="audio-btn" id="playBtn" onclick="toggleAudio()">
+            <i class="fas fa-play"></i> Play
+        </button>
+        <button class="audio-btn stop-btn" onclick="stopAudio()">
+            <i class="fas fa-stop"></i> Stop
+        </button>
+    </div>
+
+    <!-- WELCOME SECTION -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🙏</span>
+                <h2>Welcome Devotees</h2>
+                <p class="subtitle">அன்பான வரவேற்பு — Divine Blessings Await</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid-2">
+                <div class="about-image-wrapper animate-on-scroll">
+                    <!-- REPLACE: images/temple/gopuram.jpg -->
+                    <img src="images/temple/gopuram.jpg" alt="Temple Gopuram"
+                         onerror="this.src='https://novellum-filestore-mcp.s3.us-east-2.amazonaws.com/atxp:atxp_acct_71sDzs43OI4QZANCmiTxU/c95169f0-636f-43d0-9a75-7b607e1699b7.png'">
+                    <div class="badge">🕉️ Kanjampuram Heritage</div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>The Sacred Abode of Bhadreshwari Amman</h3>
+                    <p>Nestled in the spiritual heartland of <strong>Kanjampuram, Kanyakumari District</strong>, Arulmigu Bhadreshwari Amman Kovil stands as a beacon of divine grace. The Goddess Bhadreshwari — an embodiment of Adi Parasakthi — showers her devotees with protection, prosperity, and eternal blessings.</p>
+                    <div class="highlight-box">
+                        "Where the divine mother resides, there blooms eternal peace. Kanjampuram is sanctified by her sacred presence, protecting all devotees who seek her refuge."
+                    </div>
+                    <p>Managed by <strong>Samrakshana Seva Trust (Reg. 179/2004)</strong>, the temple serves as a center for spiritual worship, cultural preservation, and community welfare.</p>
+                    <a href="history.html" class="btn-primary" style="margin-top:15px;"><i class="fas fa-scroll"></i> Read Full History</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK POOJA INFO -->
+    <section class="section section-alt2">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🪔</span>
+                <h2>Daily Pooja Schedule</h2>
+                <p class="subtitle">தினசரி பூஜை நேரம்</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🌅</div>
+                    <h4>Morning Pooja</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> 5:30 AM — 9:00 AM</div>
+                    <p>Suprabatham, Abhishekam, Alankaram & Morning Archana with divine offerings</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🔆</div>
+                    <h4>Noon Pooja</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> 12:00 PM — 12:30 PM</div>
+                    <p>Uchikala Pooja with Annadhanam offering and 108 Deepa Aradhana</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🌙</div>
+                    <h4>Evening Pooja</h4>
+                    <div class="card-time"><i class="far fa-clock"></i> 5:30 PM — 8:30 PM</div>
+                    <p>Deeparadhana, Sayaratchai & Arthajama Pooja with sacred hymns</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:35px;">
+                <a href="pooja.html" class="btn-secondary"><i class="fas fa-fire"></i> View Full Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SACRED MANTHIRAMS -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🕉️</span>
+                <h2>Sacred Manthirams</h2>
+                <p class="subtitle">புனித மந்திரங்கள் — Divine Chants</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid-3">
+                <div class="mantra-card animate-on-scroll">
+                    <h4>Bhadreshwari Moola Manthiram</h4>
+                    <p class="mantra-text">
+                        ॐ ऐं ह्रीं श्रीं<br>
+                        भद्रेश्वरि देव्यै नमः<br>
+                        ॐ शक्ति ॐ
+                    </p>
+                    <p class="mantra-meaning">Chant 108 times daily for divine protection and prosperity</p>
+                </div>
+                <div class="mantra-card animate-on-scroll">
+                    <h4>Amman Gayatri Manthiram</h4>
+                    <p class="mantra-text">
+                        ॐ महादेव्यै विद्महे<br>
+                        भद्रकाल्यै धीमहि<br>
+                        तन्नो देवी प्रचोदयात्
+                    </p>
+                    <p class="mantra-meaning">For divine wisdom and spiritual awakening</p>
+                </div>
+                <div class="mantra-card animate-on-scroll">
+                    <h4>Durga Beej Manthiram</h4>
+                    <p class="mantra-text">
+                        ॐ दुं दुर्गायै नमः<br>
+                        ॐ ऐं ह्रीं क्लीं<br>
+                        चामुण्डायै विच्चे
+                    </p>
+                    <p class="mantra-meaning">Powerful protection mantra for removing obstacles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPCOMING FESTIVALS -->
+    <section class="section section-alt2">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">🎪</span>
+                <h2>Upcoming Festivals</h2>
+                <p class="subtitle">வரவிருக்கும் திருவிழாக்கள்</p>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🌺</div>
+                    <h4>Chithirai Peruvizha</h4>
+                    <div class="card-time"><i class="far fa-calendar"></i> April — May</div>
+                    <p>Grand 10-day annual festival with Theruvizha, cultural programs & Homams</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🪔</div>
+                    <h4>Navaratri Vizha</h4>
+                    <div class="card-time"><i class="far fa-calendar"></i> Sep — Oct</div>
+                    <p>Nine nights celebrating Goddess Shakti with Golu, Pooja & dance</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🕯️</div>
+                    <h4>Karthigai Deepam</h4>
+                    <div class="card-time"><i class="far fa-calendar"></i> Nov — Dec</div>
+                    <p>Festival of Lights with thousands of oil lamps & Maha Deepam</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:35px;">
+                <a href="functions.html" class="btn-secondary"><i class="fas fa-calendar-alt"></i> View All Festivals</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>🕉️ Bhadreshwari Amman Kovil</h3>
+                <p>Arulmigu Bhadreshwari Amman Kovil, Kanjampuram, Kanyakumari District, Tamil Nadu, India.<br><br>
+                Managed by <strong>Samrakshana Seva Trust</strong> (Reg. No. 179/2004). Dedicated to preserving sacred traditions and serving the community.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="history.html"><i class="fas fa-chevron-right"></i> History</a></li>
+                    <li><a href="pooja.html"><i class="fas fa-chevron-right"></i> Pooja Timings</a></li>
+                    <li><a href="functions.html"><i class="fas fa-chevron-right"></i> Festivals</a></li>
+                    <li><a href="committee.html"><i class="fas fa-chevron-right"></i> Committee</a></li>
+                    <li><a href="institutes.html"><i class="fas fa-chevron-right"></i> Institutes</a></li>
+                    <li><a href="donate.html"><i class="fas fa-chevron-right"></i> Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Temple Timings</h3>
+                <ul>
+                    <li><a href="pooja.html">🌅 Morning: 5:30 AM – 12:30 PM</a></li>
+                    <li><a href="pooja.html">🌆 Evening: 4:30 PM – 8:30 PM</a></li>
+                    <li><a href="pooja.html">🔥 Special Pooja: On Request</a></li>
+                    <li><a href="functions.html">📅 Festivals: As per Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Kanjampuram, Kanyakumari</a></li>
+                    <li><a href="tel:+91XXXXXXXXXX"><i class="fas fa-phone"></i> +91 XXXXX XXXXX</a></li>
+                    <li><a href="mailto:info@bhadreshwariamman.org"><i class="fas fa-envelope"></i> info@bhadreshwariamman.org</a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="om">🕉️</span><br>
+            © 2025 Arulmigu Bhadreshwari Amman Kovil | Samrakshana Seva Trust (179/2004)<br>
+            <span class="tagline">Lokah Samastah Sukhino Bhavantu — May all beings be happy</span>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

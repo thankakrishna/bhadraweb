@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate — Arulmigu Bhadreshwari Amman Kovil</title>
+    <link rel="icon" href="images/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="preloader" id="preloader"><div class="om-symbol">🕉️</div><p>Donate</p><div class="loading-bar"></div></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="top-bar">
+        <div class="contact-info"><span><i class="fas fa-phone"></i> +91 XXXXX XXXXX</span><span><i class="fas fa-envelope"></i> info@bhadreshwariamman.org</span></div>
+        <div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><div class="logo-icon"><span class="fallback-icon">🙏</span></div><div class="logo-text"><h1>Bhadreshwari Amman</h1><p>Samrakshana Seva Trust</p></div></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html"><i class="fas fa-om"></i> Home</a></li>
+                <li><a href="history.html"><i class="fas fa-scroll"></i> History</a></li>
+                <li><a href="pooja.html"><i class="fas fa-fire"></i> Pooja</a></li>
+                <li><a href="functions.html"><i class="fas fa-calendar-alt"></i> Functions</a></li>
+                <li><a href="committee.html"><i class="fas fa-users"></i> Committee</a></li>
+                <li><a href="institutes.html"><i class="fas fa-university"></i> Institutes</a></li>
+                <li><a href="donate.html" class="active"><i class="fas fa-hand-holding-heart"></i> Donate</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="page-banner">
+        <img src="images/amman/amman-hero.jpg" alt="Amman"
+             onerror="this.src='https://novellum-filestore-mcp.s3.us-east-2.amazonaws.com/atxp:atxp_acct_71sDzs43OI4QZANCmiTxU/bbaf187c-f3a7-45fc-bf1a-6285a3f0edae.png'">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <h2>🙏 Donate & Contribute</h2>
+            <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Donate</p>
+        </div>
+    </div>
+
+    <!-- DONATE SECTION -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">💝</span>
+                <h2>Seva Through Giving</h2>
+                <p class="subtitle">நன்கொடை — Your Offering Matters</p>
+                <div class="divider"></div>
+            </div>
+
+            <p class="donate-intro">
+                Your generous contributions sustain the sacred temple, enable daily poojas, fund grand festivals, run free Annadhanam for thousands, support education for underprivileged children, and uplift the entire community. Every donation, big or small, is a divine offering to <strong>Goddess Bhadreshwari Amman</strong>. The Goddess blesses every contributor with health, wealth, and eternal peace.
+            </p>
+
+            <div class="donate-grid">
+                <div class="donate-option animate-on-scroll">
+                    <div class="amount">₹251</div>
+                    <div class="purpose">🪔 Single Deepa Pooja</div>
+                </div>
+                <div class="donate-option animate-on-scroll">
+                    <div class="amount">₹501</div>
+                    <div class="purpose">🌺 Archana Sponsorship</div>
+                </div>
+                <div class="donate-option animate-on-scroll">
+                    <div class="amount">₹1,116</div>
+                    <div class="purpose">💐 Abhishekam Sponsorship</div>
+                </div>
+                <div class="donate-option animate-on-scroll">
+                    <div class="amount">₹5,001</div>
+                    <div class="purpose">🍚 Annadhanam (100 meals)</div>
+                </div>
+                <div class="donate-option animate-on-scroll">
+                    <div class="amount">₹11,001</div>
+                    <div class="purpose">🎪 Festival Sponsorship</div>
+                </div>
+                <div class="donate-option animate-on-scroll">
+                    <div class="amount">₹25,001</div>
+                    <div class="purpose">🏛️ Temple Renovation Fund</div>
+                </div>
+                <div class="donate-option animate-on-scroll">
+                    <div class="amount">₹51,001</div>
+                    <div class="purpose">🎓 Education Fund (Annual)</div>
+                </div>
+                <div class="donate-option animate-on-scroll">
+                    <div class="amount">Custom</div>
+                    <div class="purpose">💝 Any Amount Welcome</div>
+                </div>
+            </div>
+
+            <div class="donate-center">
+                <button class="donate-btn-main" onclick="alert('Please use the bank details below or contact temple office to donate. Om Shakti!')">
+                    <i class="fas fa-hand-holding-heart"></i> Donate Now
+                </button>
+            </div>
+
+            <!-- Bank Details -->
+            <div class="bank-details animate-on-scroll">
+                <h4>🏦 Bank Transfer Details</h4>
+                <table>
+                    <tr><td>Trust Name</td><td><strong>Samrakshana Seva Trust</strong></td></tr>
+                    <tr><td>Registration No.</td><td>179/2004</td></tr>
+                    <tr><td>Bank Name</td><td>[Bank Name — To be updated]</td></tr>
+                    <tr><td>Account Number</td><td>[Account No. — To be updated]</td></tr>
+                    <tr><td>IFSC Code</td><td>[IFSC Code — To be updated]</td></tr>
+                    <tr><td>Branch</td><td>Kanjampuram / Kanyakumari</td></tr>
+                    <tr><td>Account Type</td><td>Current Account</td></tr>
+                    <tr><td>UPI ID</td><td>[UPI ID — To be updated]</td></tr>
+                    <tr><td>Google Pay / PhonePe</td><td>[Number — To be updated]</td></tr>
+                </table>
+            </div>
+
+            <!-- Tax Info -->
+            <div style="text-align:center; margin-top:40px; padding:25px; background:var(--card-bg); border-radius:15px; border:1px solid var(--border-gold);" class="animate-on-scroll">
+                <h4 style="color:var(--primary-gold); font-family:'Cinzel Decorative',cursive; margin-bottom:10px;">📋 Tax Benefits</h4>
+                <p style="color:#bbb; font-size:14px;">All donations to Samrakshana Seva Trust are eligible for tax benefits under <strong>Section 80G</strong> of the Income Tax Act. Donation receipts will be issued for all contributions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FOR DONATION -->
+    <section class="section section-alt2">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-icon">📞</span>
+                <h2>Contact for Donations</h2>
+                <p class="subtitle">நன்கொடை தொடர்பு</p>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fas fa-phone" style="font-size:28px; color:var(--dark-maroon);"></i></div>
+                    <h4>Call Us</h4>
+                    <p style="font-size:16px; color:var(--primary-gold); font-weight:600;">+91 XXXXX XXXXX</p>
+                    <p>Available 9:00 AM – 8:00 PM</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fab fa-whatsapp" style="font-size:28px; color:var(--dark-maroon);"></i></div>
+                    <h4>WhatsApp</h4>
+                    <p style="font-size:16px; color:var(--primary-gold); font-weight:600;">+91 XXXXX XXXXX</p>
+                    <p>Send donation receipt via WhatsApp</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon"><i class="fas fa-envelope" style="font-size:28px; color:var(--dark-maroon);"></i></div>
+                    <h4>Email</h4>
+                    <p style="font-size:16px; color:var(--primary-gold); font-weight:600;">donate@bhadreshwariamman.org</p>
+                    <p>For large donations & sponsorships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col"><h3>🕉️ Bhadreshwari Amman Kovil</h3><p>Kanjampuram, Kanyakumari District.<br>Samrakshana Seva Trust (179/2004)</p></div>
+            <div class="footer-col"><h3>Quick Links</h3><ul><li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li><li><a href="history.html"><i class="fas fa-chevron-right"></i> History</a></li><li><a href="pooja.html"><i class="fas fa-chevron-right"></i> Pooja</a></li><li><a href="functions.html"><i class="fas fa-chevron-right"></i> Festivals</a></li></ul></div>
+            <div class="footer-col"><h3>Timings</h3><ul><li><a href="pooja.html">🌅 5:30 AM – 8:30 PM</a></li></ul></div>
+            <div class="footer-col"><h3>Contact</h3><ul><li><a href="#"><i class="fas fa-phone"></i> +91 XXXXX XXXXX</a></li><li><a href="#"><i class="fas fa-envelope"></i> Email Us</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><span class="om">🕉️</span><br>© 2025 Arulmigu Bhadreshwari Amman Kovil | Samrakshana Seva Trust (179/2004)<br><span class="tagline">Dharmo Rakshati Rakshitah — Dharma protects those who protect Dharma</span></div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></a>
+    <script src="js/main.js"></script>
+</body>
+</html>
